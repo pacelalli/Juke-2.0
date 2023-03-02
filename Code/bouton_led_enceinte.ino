@@ -11,10 +11,10 @@
 int X=54;
 static int8_t Send_buf[8] = {0} ;//The MP3 player undestands orders in a 8 int string
 
-#define RX 12
+#define RX 33
 
-#define TX 13
-Adafruit_NeoPixel strip = Adafruit_NeoPixel(X, 6, NEO_GRB + NEO_KHZ800);
+#define TX 32
+Adafruit_NeoPixel strip = Adafruit_NeoPixel(X, 26, NEO_GRB + NEO_KHZ800);
 SoftwareSerial mySerial(RX,TX);
 
 
@@ -63,9 +63,9 @@ SoftwareSerial mySerial(RX,TX);
 #define SINGLE_PLAY 0X08//Single play(without folder)
 
 //Parameters
-const int clkPin   = 2;
-const int dtPin   = 4;
-const int swPin   = 7;
+const int clkPin   = 22;
+const int dtPin   = 24;
+const int swPin   = 27;
 
 //Variables
 int rotVal  = 0;
